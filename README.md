@@ -12,7 +12,7 @@
 
 ---
 
-# 🚀 Executive Summary (30 Seconds)
+# 🚀 Executive Summary 
 
 | Business Finding | Business Impact |
 |------------------|-----------------|
