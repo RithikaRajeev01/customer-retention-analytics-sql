@@ -3,7 +3,6 @@
 ### Turning 7,043 Raw Customer Records into Actionable Retention Decisions with Advanced SQL
 
 ![SQL](https://img.shields.io/badge/SQL-MySQL%208-4479A1?logo=mysql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Data%20Pipeline-3776AB?logo=python&logoColor=white)
 
 
 > **Can SQL identify which customers are most likely to churn—and who should be retained first?**
@@ -92,6 +91,8 @@ Before analysis, the dataset was validated to ensure high data quality.
 | Missing Values | Dynamically validated |
 | Blank `TotalCharges` | Converted to NULL |
 | Data Types | Validated & transformed |
+
+> **Note:** A one-time Python script was used only to import the CSV dataset into MySQL. All data cleaning, transformation, analysis, segmentation, and business insights were performed entirely using SQL.
 
 ---
 
@@ -291,15 +292,11 @@ Rather than asking customer service teams to contact every customer, organisatio
 
 ---
 
-# Technology Stack
-
 | Category | Technologies |
 |----------|--------------|
 | Database | MySQL 8 |
-| Language | SQL, Python |
-| Python Libraries | pandas, SQLAlchemy, PyMySQL |
+| Language | SQL |
 | SQL Concepts | Data Cleaning, Dynamic SQL, Aggregate Functions, CASE Statements, CTEs, Window Functions (`NTILE`, `ROW_NUMBER`), INFORMATION_SCHEMA |
-
 ---
 
 # Repository Structure
@@ -411,14 +408,4 @@ Key capabilities demonstrated include:
 - Building a rule-based customer risk scoring framework using CTEs and `CASE` expressions.
 - Translating analytical findings into strategic, data-driven business recommendations.
 
----
-
-# Future Enhancements
-
-Potential areas for extending this project include:
-
-- Integrate the SQL pipeline with an interactive Power BI dashboard for business users and executive reporting.
-- Apply predictive machine learning models to estimate customer churn probability and compare their performance with the current rule-based risk scoring approach.
-- Incorporate additional customer behavioural data (such as support interactions or product usage) to further refine customer segmentation and risk assessment.
-- Evaluate the effectiveness of retention strategies by analysing customer outcomes after targeted retention campaigns.
 ---
